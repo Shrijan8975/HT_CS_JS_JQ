@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function Emp(id,nm,sal,dept)
+        {
+        this.eid=id
+        this.ename=nm
+        this.salary=sal
+        this.department=dept
+        }
+        function Display()
+        {
+        eid = document.getElementById("eid").value
+        ename = document.getElementById("ename").value
+        salary = document.getElementById("salary").value
+        department = document.getElementById("department").value
+
+        var s = new Emp(eid,ename,salary,department)
+        document.write("eid= "+s.eid+"<br>")
+        document.write("ename= "+s.ename+"<br>")
+        document.write("salary="+s.salary+"<br>")
+        document.write("department= "+s.department+"<br>")
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <form>
+        <table border = 1>
+            <tr><td>enter id</td>
+            <td><input type="number" id="eid"/></td></tr>
+            <tr><td>enter ename</td>
+            <td><input type="text" id="ename"/></td></tr>
+            <tr><td>enter salary</td>
+            <td><input type="number" id="salary"/></td></tr>
+            <tr><td>enter department</td>
+            <td><input type="text" id="department"/></td></tr>
+
+            <tr><td><input type="button" value= "display" onclick="Display()"/></td>
+            <td></td></tr>
+           
+            
+
+
+        </table>
+    </form>
+</body>
+</html>
